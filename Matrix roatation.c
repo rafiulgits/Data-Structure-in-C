@@ -58,7 +58,7 @@ int main()
     ///********** index inter-exchange has no difference
     */
 
-    /// horizontal (this like rotate 180 degree)
+    /// horizontal (this is like rotate 180 degree)
     /*
     for(i=0,newI=len-1;i<len;i++,newI--)
     {
