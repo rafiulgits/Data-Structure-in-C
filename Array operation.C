@@ -6,7 +6,7 @@ int LENGTH(int source[]);
 
 int main()
 {
-	int source[1000]; /// predefine array
+	int source[1000]={'\0'}; /// predefine array with null value
 
     /// Insert
     /*
