@@ -6,6 +6,7 @@ int INDEX(char data[],char source[]);
 int OCCURRENCE(char data[],char source[]);
 void SUBSTRING(char subdata[], char data[], int start, int length);
 void CONCATENATION(char s[], char s1[], char s2[]);
+void REVERSE(char source[]);
 
 /// word processing
 void INSERT(char source[], int pos, char data[]);
@@ -16,8 +17,8 @@ void REPLACE(char source[], char pattern1[], char pattern2[]);
 int main()
 {
     /// ::::::::::: code here :::::::::::::::::://
-
 }
+
 /// ////////////////////////
 /// function define area //
 /// //////////////////////
@@ -110,4 +111,15 @@ int OCCURRENCE(char data[],char source[])
 		}
 	}
 	return Counter;
+}
+void REVERSE(char source[])
+{
+    int source_length=LENGTH(source);
+    int i,j;
+    for(i=0,j=source_length-1;i<source_length/2;i++,j--)
+    {
+        char temp = source[i];
+        source[i]=source[j];
+        source[j]=temp;
+    }
 }
